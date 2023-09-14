@@ -1,0 +1,433 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%           01-12-2022
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Adam Fulton}{
+\href{mailto:adfulton@mtu.edu}{adfulton@mtu.edu}
+| \href{2312390902}{231-239-0902}
+| \href{https://www.linkedin.com/in/adafulton/}{linkedin.com/in/adafulton/}
+% | \href{https://spicyfajitas.github.io/docs/}{spicyfajitas.github.io/docs}
+| \href{https://github.com/spicyFajitas}{github.com/spicyFajitas}\\
+%\href{mailto:afulton101222@gmail.com}{afulton101222@gmail.com}
+%\href{M99424500}{M99424500} 
+%| \today
+%\href{mailto:adfulton@mtu.edu}{adfulton@mtu.edu} | \href{tel:12312390902}{231.239.0902} | \today
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.58\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Applicable Experience}
+\vspace{.8}
+
+\runsubsection{Extreme Engineering Solutions}
+\descript{\newline Associate Systems Administrator} % | Information Technology
+\location{January 2023 - Present | Verona, WI}
+% **Do not uncomment** employed full time January 9, 2023 - August 25, 2023
+% **Do not uncomment** employed part time August 26, 2023 - Present
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improve security and reliability of applications through CI/CD methodologies while implementing new features for end users
+\item Manage server configuration and application installation with ansible
+\item Read through log files for servers and applications to diagnose and solve issues
+\item Utilize technologies such as Git, Ansible, LXD, ZFS, Nginx, Apache, and other open source tools to implement custom solutions to unique company problems
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dow Chemical}
+\descript{\newline ITS Hosting | Intern}
+\location{May 2022 - December 2022  | Midland/Auburn MI, Remote}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% % **Do not uncomment** employed {May 16, 2022 - August 5, 2022 | Houghton, MI}
+\begin{tightemize}
+\item Networking intern August 2022 - December 2022
+\item Converting application hosted on virtual machine into Docker container
+% \item Using data center infrastructure management to document data center inventory.
+\item Cloud Services intern May - August 2022
+\item Reviewed Azure virtual network peerings for documentation and enhancement purposes
+\item Developed documentation for company clients to better understand company's cloud presence
+\item PowerShell scripted migration of Azure resources between regions
+% \item Engaged with vendors to troubleshoot issues on virtual firewalls.
+% \item Developed high-level prototype for shipping material tracking and recycling.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IT Oxygen Student Enterprise}
+\descript{\newline Operations Team | Technician}
+\location{January 2021 - December 2022 | Houghton, MI}
+% % ** Do not uncomment ** January 13, 2021 - December 9, 2022
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Elected as President May 2021 - May 2022
+\item Focus on rebuilding cluster and optimizing on-premise environment
+\item Implementing new router, firewall, and remote access solutions
+\item Migrating web development projects to cloud hosting provider (AWS)
+\item Focus on recruitment to sustain and grow enterprise
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Michigan Technological University}
+% \descript{\newline Procurement Student Assistant - Information Technology}
+% \location{February 2022 - April 2022 | Houghton, MI}
+% % **Do not uncomment** employed {February 14 2022 - April 22, 2022 | Houghton, MI}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Work with procurement staff to submit orders to vendors to purchase university-owned equipment
+% \item Inventory and received purchased items
+% \item Create and track university assets.
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{Michigan Technological University}
+\descript{\newline Information Technology | Help Desk Consultant}
+\location{October 2020 - May 2022 | Houghton, MI}
+%\location{October 8, 2020 - May 6, 2022 | Houghton, MI}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked at the help desk answering phone calls made by students, faculty, and staff about computer-related issues
+\item Staffed walk-up help desk
+\item Documented and resolved issues for students, faculty, and staff by using ticket management system
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{FloraCraft}
+% \descript{\newline Information Technology | Intern}
+% \location{May 2021 - August 2021 | Ludington, MI}
+% % **Do not uncomment** employed {May 5th 2021 - August 11, 2021}
+% %\vspace{\topsep}
+% \begin{tightemize}
+% \item Monitored wireless network for issues
+% \item Troubleshooted and resolve computer hardware and software issues
+% \item Helped implement ticketing system company-wide
+% \item Mounted new access points to increase wireless density coverage and set up public addressing horns to help factory workers hear the PA system
+% \item Helped company switch from on-site Mitel phone system to cloud system with Microsoft Teams integration
+% \end{tightemize}
+
+% \runsubsection{Michigan Technological University}
+% \descript{\newline Student Employee - 3D Printing}
+% \location{December 2020 - April 2021 | Houghton, MI}
+% % **Do not uncomment** employed December 2020 - April 30, 2021
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Use CAD files to 3D print models of railroad bogies and locomotives for learning purposes for MTU students and Summer Youth Program
+% \item Model railroad cross sections to real world size
+% %\item Reorganize financial reports for supervisor
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Aldi}
+% \descript{\newline Associate }
+% \location{April 2020 – August 2020 | Ludington, MI}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Worked as a cashier and associate helping with the day to day operations of the store
+% \item Duties included stocking shelves, maintaining the stores appearance, ensuring public safety through disinfecting carts, and maintaining the organization of the back room
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{WSCC IT Help Desk}
+% \descript{\newline Computer Technician }
+% \location{Jan 2019 - May 2020 | Scottville, MI}
+% \begin{tightemize}
+% \item Helped with the maintenance and upkeep of technology across campus. Experienced in working with a variety of hardware repairs, hardware upgrades, and software updates and installation. Familiar with active directory and password management services
+% \item Duties included Windows 10 installations, computer station assembly and disassembly, iMac hardware upgrades, server maintenance, basic network upkeep, and helping students and staff with computer issues
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Crystal Lake Campground}
+% \descript{\newline Park Ranger }
+% \location{May 2018 – Aug 2018 | Scottville, MI}
+% \begin{tightemize}
+% \item Assisted the campground owner with day to day operations such as cleaning empty campsites, raking leaves, operating the campground store, and cutting down trees
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Wolf's Den}
+% \descript{\newline Woodworker }
+% \location{Sep 2015 – Aug 2017 | Scottville, MI}
+% \begin{tightemize}
+% \item Worked on first-phase and second-phase production of wooden furniture such as cabinets, bed frames, desks, tables, and mirrors. First, wood needed to be trimmed, planed or sanded into a workable state. Second, wood needed to be made softer and more refined so that it could be treated with lacquers and finishes
+% \item Worked with power tools such as hand saws, hand planers, sanders, drills, table saws, industrial planers, and industrial sanders
+% \end{tightemize}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \openup .5em
+% \begin{tightemize}
+% \item 2020 & Michigan Technological University Dean's List Fall Semester
+% \item 2020 & Phi Theta Kappa All-Michigan Academic Team 
+% \item 2019 & Honorable Mention Michigan Youth Arts Festival
+% % \item 2018 & Outstanding Student in Music at WSCC
+% % \item 2018 & Director’s Award for Musical Performance
+% \item 2018 & One of two students in school selected for a Youth Leadership Conference led by Bill Huizenga. Hosted May 14th at GVSU
+% \item 2017, 2019 & Louis Armstrong Jazz Award
+% \item 2016-2019 & H. G. Bacon Academic Excellence 4-Year Recipient
+% \end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.39\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Summary
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+
+I am a dedicated fourth year Computer Network and System Administration student. My primary education and experience is in network \newline engineering, server administration, and \newline virtualization but I am actively learning scripting, automation, and Linux technologies. My goal is to develop a career as a DevOps Engineer, \newline Kubernetes administrator, Site Reliability \newline Engineer, or other similar field.
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     EDUCATION
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\descript{Michigan Technological University}
+\location{Computer Network and System Administration}
+\location{Cybersecurity Minor}
+\location{August 2020 - May 2024}
+Department GPA: 4.0 | Cumulative GPA 4.0
+\sectionsep
+% \subsection{ASM Tech Early College High School}
+% \descript{Associate's of General Studies - West Shore Community College}
+% \location{August 2018-May 2020 | Scottville, MI}
+% Graduated with Honors \\
+% \location{ Cumulative GPA: 3.556 / 4.0}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+Ansible \\
+Docker \\
+Git \\
+GitLab CI \\
+Linux Administration \\
+LXC/LXD \\
+MySQL \\
+Networking \\
+pfSense \\
+PostgreSQL \\
+Proxmox \\
+Scripting (Python, Bash, PowerShell) \\
+Ticketing Systems \\
+TrueNAS \\
+Unifi \\
+VMware ESXi \& Vcenter \\
+Windows Server \\
+
+\sectionsep
+
+% \subsection{Programming}
+% \location{3+ years:}
+% Python \textbullet{} C/C++ \\
+% \location{1+ years:}
+% PHP \textbullet{} JavaScript \\
+% \location{0+ years:}
+% Matlab \textbullet{} R \textbullet{} SAS \\
+% \sectionsep
+
+% \subsection{Technology}
+% Git/Github \textbullet{} AWS \textbullet{} Linux \\
+% UNIX \textbullet{} Windows \textbullet{} ROS \\
+% Artificial Intelligence \textbullet{} Automation \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Analysis of Algorithms
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Artificial Intelligence \\
+% {\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+
+% \subsection{MTU}
+% Discrete Structures for Computing \\
+% Network Admin II
+% Network Admin I \\
+% Microsoft System Admin \\
+% Scripting Admin and Automation \\
+% Wireless System Admin \\
+% Computer and OS Architecture \\
+% Cyber Ethics \\
+% Digital Electronics \\
+% Intro to C \\
+% Linux Fundamentals \\
+% Elementary Linear Algebra \\
+% Basic Electronics \\
+% \sectionsep
+
+% \subsection{WSCC}
+% Python Programming \\
+% Calculus I-III \\
+% Differential Equations \\
+% Engineering Physics I, II \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Groups \& Clubs}
+Linux Users Group \\
+Jazz Band \\
+Networking and Computing Student Association \\
+Red Team \\
+% Open Source Hardware Enterprise \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+%  \section{Certifications}
+%  \item MTA: Introduction to Programming Using Python - Issued by Microsoft 
+%  \href{https://www.youracclaim.com/badges/32025fc3-f4af-4cd4-bd2a-b10e1fb01f51/public_url}{youracclaim.com/badges/32025fc3-f4af-4cd4-bd2a-b10e1fb01f51/public_url}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links}
+% Github:// \href{https://github.com/ZDTaylor}{\bf ZDTaylor} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/zacharydtaylor1}{\bf zacharydtaylor1} \\
+% Career Center:// \href{https://msstate-csm.symplicity.com/profiles/zachary.taylor3}{\bf zachary.taylor3}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     REFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{References}
+% Paula Moul | West Shore Community College \newline{}
+% Academy of Science Math and Technology Early College High School Success Coordinator \newline{}
+% 231-327-0620 \newline{}
+% \newline{}
+% Susan Freeland | Aldi \newline{}
+% Shift Manager \newline{}
+% 231-794-8497 \newline{}
+% \newline{}
+% Timothy Fink | WSCC IT Department \newline{}
+% Webmaster \newline{}
+% 231-794-9961 \newline{}
+% \newline{}
+% Craig Peterson | WSCC IT Department \newline{}
+% Media Services \newline{}
+% 231-843-5920 \newline{}
+% \newline{}
+% Phil Wolf | Wolf's Den \newline{}
+% Owner\newline{}
+% 231-757-7000 / 231-907-1370 \newline{}
+% \sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
